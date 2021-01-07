@@ -29,7 +29,7 @@ df[convert_cols] = df[convert_cols].apply(pd.to_numeric, errors='coerce')
 df = df.set_index("Angebote")
 
 # url of ivw spreadsheet
-url = 'https://docs.google.com/spreadsheets/d/1BLd1tgu3oMMiULDA9w2kqNzdORHRdhkwL6jibUBAIcQ/edit?usp=sharing'
+url = 'https://docs.google.com/spreadsheets/d/1PFTWjVaEtp-0cpIHRQqBoFXtokfa2xz2oKOZu9nblaI/edit?usp=sharing'
 
 # open spreadsheet
 gc = gspread.oauth()

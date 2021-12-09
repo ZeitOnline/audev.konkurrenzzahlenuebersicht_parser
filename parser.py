@@ -32,7 +32,7 @@ df = df.set_index("Angebote")
 url = 'https://docs.google.com/spreadsheets/d/1PFTWjVaEtp-0cpIHRQqBoFXtokfa2xz2oKOZu9nblaI/edit?usp=sharing'
 
 # open spreadsheet
-gc = gspread.oauth()
+gc = gspread.oauth(credentials_filename='credentials.json')
 sh = gc.open_by_url(url)
 worksheet = sh.worksheet("IVW-Konkurrenzübersicht")
 
